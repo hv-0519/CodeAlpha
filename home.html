@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Home</title>
+  <style>
+    /* Reset some default styles */
+    body, ul, li, h1, h2, p {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9fafb;
+      color: #333;
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    /* Navbar styles */
+    .navbar {
+  width: 100%;
+  background: #098afe;
+  padding: 0;
+}
+
+.nav-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  gap: 40px;
+  padding: 0 40px;
+  height: 64px;
+  align-items: center;
+}
+
+.nav-content a {
+  color: #fff;
+  text-decoration: none;
+  opacity: 0.85;
+  font-size: 17px;
+  font-weight: 500;
+  transition: opacity 0.2s;
+  position: relative;
+  padding: 8px 0;
+}
+
+.nav-content a.active,
+.nav-content a:hover {
+  opacity: 1;
+  border-bottom: 2.5px solid #fff;
+}
+    
+    header {
+      background-color: #ffffff;
+      color: rgb(0, 0, 0);
+      padding: 20px 30px;
+      text-align: center;
+      flex-shrink: 0;
+    }
+    header h1 {
+      margin-bottom: 8px;
+      font-size: 2rem;
+    }
+    header p {
+      font-size: 1.1rem;
+      font-weight: 400;
+    }
+    
+    main {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 0 20px;
+      flex-grow: 1;
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    h2 {
+      color: #007bff;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #007bff;
+      padding-bottom: 5px;
+      font-weight: 700;
+      font-size: 1.5rem;
+    }
+    ul.features-list {
+      list-style-type: disc;
+      margin-left: 20px;
+    }
+    ul.features-list li {
+      margin-bottom: 10px;
+    }
+    .testimonial {
+      background-color: #e9f5ff;
+      padding: 15px 20px;
+      border-left: 4px solid #007bff;
+      margin-bottom: 20px;
+      font-style: italic;
+      border-radius: 4px;
+    }
+    
+    footer {
+      background-color: #333;
+      color: #eee;
+      text-align: center;
+      padding: 15px 10px;
+      font-size: 0.9rem;
+      flex-shrink: 0;
+    }
+    footer a {
+      color: #71b8ff;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+    footer a:hover, footer a:focus {
+      text-decoration: underline;
+      outline: none;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 600px) {
+      nav ul {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 0;
+      }
+      nav ul li {
+        margin: 8px 0;
+      }
+      main {
+        margin: 20px 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-content">
+      <a href="home.html">Home</a>
+      <a href="services.html">Products</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="help.html">Help</a>
+      <a href="cart.html" class="btn px-0 ml-3">
+                                <i class="fas fa-shopping-cart text-primary"></i>
+                                <span class="badge text-secondary border border-secondary rounded-circle" style="padding-bottom: 2px;">Cart</span>
+                            </a>
+      <a href="sign_in.html">Register</a>
+      <a href="login.html">Login</a>
+    </div>
+  </nav>
+
+  <header>
+    <h1>Welcome to Your Home Page!</h1>
+    <p>Your gateway to explore our services and manage your account with ease.</p>
+  </header>
+
+  <main>
+
+    <section>
+      <h2>Explore Our Services</h2>
+      <p>We offer a range of services designed to improve your productivity and simplify your workflow. Here are some key features:</p>
+      <ul class="features-list">
+        <li><strong>Service Dashboard:</strong> Monitor all your activities and statistics at a glance.</li>
+        <li><strong>Account Management:</strong> Easily update your profile and preferences anytime.</li>
+        <li><strong>Secure Data Storage:</strong> All your data is safely encrypted and backed up.</li>
+        <li><strong>Customer Support:</strong> 24/7 assistance to help with any questions or issues.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Manage Your Account</h2>
+      <p>Keep your account information up-to-date and review your subscription at any time.</p>
+      <ul class="features-list">
+        <li>Update personal details such as email, password, and contact info.</li>
+        <li>View transaction history and billing details.</li>
+        <li>Manage your notifications and communication preferences.</li>
+        <li>Access usage reports and insights tailored to your activity.</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Contact us: <a href="mailto:support@example.com">support@example.com</a> | Phone: +1 234 567 890</p>
+    <p>&copy; 2025 Your Company Name. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
